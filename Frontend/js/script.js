@@ -1,6 +1,6 @@
 document.getElementById('loadPdfButton').addEventListener('click', function() {
     const pdfName = 'LAX-ground.pdf';
-    const apiUrl = `http://localhost:8080/api/pdf/${pdfName}`;
+    const apiUrl = `http://localhost:8080/api/pdf/${pdfName}`; // URL deines Backends
 
     fetch(apiUrl)
         .then(response => response.blob())
